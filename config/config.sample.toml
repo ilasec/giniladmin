@@ -1,0 +1,42 @@
+[server]
+port = "8001"
+debug = true
+sessiondb = "session.db"
+
+[log]
+dir = "logs"
+
+[db]
+type = "sqlite"
+path = "./"
+port = "3306"
+config = "charset=utf8mb4&parseTime=True&loc=Local"
+db-name = "giniladmin"
+username ="root"
+password = "123456"
+prefix = ""
+singular = false
+engine = ""
+max-idle-conns = 10
+max-open-conns = 100
+log-mode = "debug"
+
+[jwt]
+signing-key = "3de86b30-e8be-4324-b426-f29b7dfba007"
+expires-time = "7d"
+buffer-time = "1d"
+issuer = "qmPlus"
+
+[local]
+path = "data"
+
+[cache]
+path = "cache.data"
+size = 1024
+
+[captcha]
+key-long = 6
+img-width = 240
+img-height = 80
+open-captcha = 5
+open-captcha-timeout = 60
